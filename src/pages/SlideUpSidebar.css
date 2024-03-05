@@ -1,0 +1,129 @@
+.slider-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 75%;
+  width: 100%;
+  background-color: #f0f0f0;
+  /* overflow: hidden; */ 
+  transition: transform 0.2s ease-out;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.slider-content {
+  padding: 10px;
+  max-height: 150vh; /* Limit height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+}
+
+/* Slider Content Starts here */
+
+.grip-icon {
+  position:relative;
+  top: 10px;
+  left: 50%;
+  width: 100%;
+  height: 55px;
+  transform: translateX(-50%);
+  color:rgb(92, 92, 92)
+}
+
+
+.downbar-content {
+  width: 100%;
+  padding: 10px;
+  transition: width 0.9s ease;
+  position: relative;
+  left: 9px;
+}
+
+.downbar-content.expand {
+  width: 100%;
+}
+
+.downbar-header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.css-2ulfj5-MuiTypography-root {
+  line-height: 1 !important;
+  letter-spacing: 0.007em;
+}
+
+h6 {
+  width: 100%; /* Take full width on mobile */
+  font-size: small; /* Adjust font size for mobile */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600 !important;
+  position: relative;
+  left: 0px;
+  color: rgb(23, 23, 23);
+}
+
+.symbol-counts {
+  position: relative;
+  min-width: 40px;
+  min-height: 20px;
+  justify-content: space-evenly;
+}
+
+.count-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 40px;
+  margin-right: 10px;
+}
+
+.count-container svg {
+  fill: transparent;
+  stroke: rgb(57, 36, 36);
+  stroke-width: 0.5;
+  width: 15px;
+}
+
+.title {
+  color: rgb(129, 129, 129) !important;
+  font-size: small !important;
+  font-weight: 300 !important;
+}
+
+.description {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 600 !important;
+}
+
+.dis_details {
+  color: rgb(129, 129, 129) !important;
+  font-size: small !important;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .sidebar-content {
+    padding: 5px;
+  }
+
+  .sidebar-header {
+    width: 100% !important;
+  }
+  .grip-icon {
+    position: relative;
+    top: 10px;
+    left: 50%;
+    width: 100%;
+    height: 55px;
+    transform: translateX(-50%);
+    padding-bottom: 0px;
+  }
+  
+
+  .count-container {
+    margin-right: 8px;
+  }
+
+  .disc_details {
+    font-size: small !important;
+  }
+}
